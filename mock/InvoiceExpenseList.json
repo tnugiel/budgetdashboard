@@ -1,0 +1,837 @@
+[{
+        "code" : "22010",
+		"id" : "163",
+		"it" : false,
+		"name" : "ACCD INCOME TAXES - S&L PRIOR YEAR"
+	}, {
+		"code" : "20000",
+		"id" : "127",
+		"it" : false,
+		"name" : "ACCOUNTS PAYABLE"
+	}, {
+		"code" : "21130",
+		"id" : "155",
+		"it" : false,
+		"name" : "ACCRUED BONUS"
+	}, {
+		"code" : "21150",
+		"id" : "476",
+		"it" : false,
+		"name" : "ACCRUED COMPENSATION EXPENSES"
+	}, {
+		"code" : "20300",
+		"id" : "135",
+		"it" : false,
+		"name" : "ACCRUED EXPENSES"
+	}, {
+		"code" : "20100",
+		"id" : "130",
+		"it" : false,
+		"name" : "ACCRUED OPERATING EX"
+	}, {
+		"code" : "78100",
+		"id" : "385",
+		"it" : false,
+		"name" : "ADP MAILING SER"
+	}, {
+		"code" : "72800",
+		"id" : "365",
+		"it" : false,
+		"name" : "ADVERTISING"
+	}, {
+		"code" : "73300",
+		"id" : "377",
+		"it" : false,
+		"name" : "AMORTIZATION EXPENSE"
+	}, {
+		"code" : "70200",
+		"id" : "339",
+		"it" : false,
+		"name" : "AUDIT FEES"
+	}, {
+		"code" : "78910",
+		"id" : "415",
+		"it" : false,
+		"name" : "BANK CHARGES"
+	}, {
+		"code" : "63000",
+		"id" : "331",
+		"it" : false,
+		"name" : "BENEFITS - BUSINESS EMP INCENT REBAT"
+	}, {
+		"code" : "62405",
+		"id" : "329",
+		"it" : false,
+		"name" : "BENEFITS - GROUP LIFE INSURANCE"
+	}, {
+		"code" : "62403",
+		"id" : "327",
+		"it" : false,
+		"name" : "BENEFITS - LT DISABLITY INSURANCE"
+	}, {
+		"code" : "62401",
+		"id" : "325",
+		"it" : false,
+		"name" : "BENEFITS - MEDICAL INSURANCE"
+	}, {
+		"code" : "62406",
+		"id" : "330",
+		"it" : false,
+		"name" : "BENEFITS - RETIREE MEDICAL"
+	}, {
+		"code" : "62402",
+		"id" : "326",
+		"it" : false,
+		"name" : "BENEFITS - SUI\/DIS INSURANCE"
+	}, {
+		"code" : "62404",
+		"id" : "328",
+		"it" : false,
+		"name" : "BENEFITS - WORKMAN'S COMP INSURANCE"
+	}, {
+		"code" : "99100",
+		"id" : "429",
+		"it" : false,
+		"name" : "BOND REL. DERIVATIVES (MHHD 1040200)"
+	}, {
+		"code" : "20713",
+		"id" : "503",
+		"it" : false,
+		"name" : "BROKER BILL PAYABLE"
+	}, {
+		"code" : "50000",
+		"id" : "272",
+		"it" : false,
+		"name" : "BROKER BILLS"
+	}, {
+		"code" : "78325",
+		"id" : "403",
+		"it" : false,
+		"name" : "BROKER DEALER T\/D"
+	}, {
+		"code" : "22380",
+		"id" : "172",
+		"it" : false,
+		"name" : "BROKER SUSPENSE"
+	}, {
+		"code" : "759",
+		"id" : "334",
+		"it" : false,
+		"name" : "CAPITAL ALLOCATION"
+	}, {
+		"code" : "758",
+		"id" : "279",
+		"it" : false,
+		"name" : "FEE FEE"
+	}, {
+		"code" : "757",
+		"id" : "137",
+		"it" : false,
+		"name" : "BILL PAYABLE"
+	}, {
+		"code" : "20707",
+		"id" : "144",
+		"it" : false,
+		"name" : "CLEARING CHARGES PAYABLE"
+	}, {
+		"code" : "756",
+		"id" : "281",
+		"it" : false,
+		"name" : "CLRING"
+	}, {
+		"code" : "99440",
+		"id" : "451",
+		"it" : false,
+		"name" : "COMM INCOME SALES CONC (Related Part"
+	}, {
+		"code" : "51001",
+		"id" : "289",
+		"it" : false,
+		"name" : "COMM PD - TRADEWEB"
+	}, {
+		"code" : "71202",
+		"id" : "351",
+		"it" : false,
+		"name" : "CHOCO - DATA"
+	}, {
+		"code" : "71201",
+		"id" : "350",
+		"it" : false,
+		"name" : "CHOCO - VOIP"
+	}, {
+		"code" : "71205",
+		"id" : "465",
+		"it" : false,
+		"name" : "CHOCO-OTHR"
+	}, {
+		"code" : "71203",
+		"id" : "464",
+		"it" : false,
+		"name" : "CHOCO-WIRELESS"
+	}, {
+		"code" : "72901",
+		"id" : "368",
+		"it" : false,
+		"name" : "COMPANY FUNCTIONS EX"
+	}, {
+		"code" : "78920",
+		"id" : "416",
+		"it" : false,
+		"name" : "CONSOLIDATION EXPENSES"
+	}, {
+		"code" : "70300",
+		"id" : "341",
+		"it" : false,
+		"name" : "CONSULTANT FEES"
+	}, {
+		"code" : "68500",
+		"id" : "333",
+		"it" : false,
+		"name" : "CORPORATE ALLOCATION"
+	}, {
+		"code" : "79010",
+		"id" : "417",
+		"it" : false,
+		"name" : "CORPORATE ALLOCATION - DIRECT"
+	}, {
+		"code" : "79020",
+		"id" : "418",
+		"it" : false,
+		"name" : "CORPORATE ALLOCATION - INDIRECT"
+	}, {
+		"code" : "10100",
+		"id" : "1",
+		"it" : false,
+		"name" : "CURRENT A\/C"
+	}, {
+		"code" : "99600",
+		"id" : "448",
+		"it" : false,
+		"name" : "DEFERRED INC. TAX EXP(SAP 6020000)"
+	}, {
+		"code" : "22080",
+		"id" : "170",
+		"it" : false,
+		"name" : "DEFERRED RENT"
+	}, {
+		"code" : "73360",
+		"id" : "379",
+		"it" : true,
+		"name" : "DEPR. EXP.- IIT"
+	}, {
+		"code" : "73370",
+		"id" : "380",
+		"it" : false,
+		"name" : "DEPR. EXP.- SOFTWARE"
+	}, {
+		"code" : "73350",
+		"id" : "378",
+		"it" : false,
+		"name" : "DEPRECIATION EXPENSE"
+	}, {
+		"code" : "70350",
+		"id" : "342",
+		"it" : false,
+		"name" : "DIRECTORS FEE"
+	}, {
+		"code" : "99410",
+		"id" : "442",
+		"it" : false,
+		"name" : "DIV INC FRM TRDNG SEC(4040102\/471020"
+	}, {
+		"code" : "72802",
+		"id" : "367",
+		"it" : false,
+		"name" : "DONATIONS_CHARITY EVENTS"
+	}, {
+		"code" : "63001",
+		"id" : "332",
+		"it" : false,
+		"name" : "EMPLOYEE WELFARE"
+	}, {
+		"code" : "70400",
+		"id" : "343",
+		"it" : false,
+		"name" : "EMPLOYMENT SERVICE FEE"
+	}, {
+		"code" : "73600",
+		"id" : "383",
+		"it" : false,
+		"name" : "EQUIPMENT - RENTALS"
+	}, {
+		"code" : "98001",
+		"id" : "427",
+		"it" : false,
+		"name" : "ESTIMATED DAILY EXPENSES"
+	}, {
+		"code" : "50120",
+		"id" : "275",
+		"it" : false,
+		"name" : "EXCHANGE FEE EXPENSE"
+	}, {
+		"code" : "81001",
+		"id" : "422",
+		"it" : false,
+		"name" : "FED. INC. TAX - CURR"
+	}, {
+		"code" : "81002",
+		"id" : "423",
+		"it" : false,
+		"name" : "FED. INC. TAX - DEF."
+	}, {
+		"code" : "99430",
+		"id" : "444",
+		"it" : false,
+		"name" : "FED\/STATE INC TAX-CURR(SAP 4060450)"
+	}, {
+		"code" : "78801",
+		"id" : "410",
+		"it" : false,
+		"name" : "FIDELITY BOND INSURANCE"
+	}, {
+		"code" : "78311",
+		"id" : "398",
+		"it" : false,
+		"name" : "FINES & PENALTIES"
+	}, {
+		"code" : "78324",
+		"id" : "402",
+		"it" : false,
+		"name" : "FLOOR BROKERAGE - DUES\/FEES"
+	}, {
+		"code" : "15000",
+		"id" : "68",
+		"it" : false,
+		"name" : "FURNITURE, FIXT & EQUIP - FA"
+	}, {
+		"code" : "99540",
+		"id" : "446",
+		"it" : false,
+		"name" : "GAIN (LOSS) ON SALE OF F\/A"
+	}, {
+		"code" : "78800",
+		"id" : "409",
+		"it" : false,
+		"name" : "GENERAL INSURANCE"
+	}, {
+		"code" : "73501",
+		"id" : "382",
+		"it" : false,
+		"name" : "GENERAL REPAIRS & MAINT"
+	}, {
+		"code" : "78301",
+		"id" : "392",
+		"it" : false,
+		"name" : "GLOBAL RESEARCH - RELATED PARTY"
+	}, {
+		"code" : "71301",
+		"id" : "352",
+		"it" : false,
+		"name" : "HARDWARE MAINTENANCE"
+	}, {
+		"code" : "16800",
+		"id" : "94",
+		"it" : false,
+		"name" : "HONG KONG\/TOKYO RECEIVABLE"
+	}, {
+		"code" : "77110",
+		"id" : "384",
+		"it" : false,
+		"name" : "IN OFFICE MEALS"
+	}, {
+		"code" : "70600",
+		"id" : "346",
+		"it" : false,
+		"name" : "INTERVIEW\/REVIEW EXP"
+	}, {
+		"code" : "71208",
+		"id" : "541",
+		"it" : true,
+		"name" : "COMMS-CLIENTS"
+	}, {
+		"code" : "71206",
+		"id" : "539",
+		"it" : true,
+		"name" : "COMMS-DATAINTERNAL"
+	}, {
+		"code" : "71207",
+		"id" : "540",
+		"it" : true,
+		"name" : "COMMS-DATAINTERNET"
+	}, {
+		"code" : "71209",
+		"id" : "542",
+		"it" : true,
+		"name" : "COMMS-EXCH&BUSPARTNERS"
+	}, {
+		"code" : "71210",
+		"id" : "543",
+		"it" : true,
+		"name" : "COMMS-VOIPCIRCUIT"
+	}, {
+		"code" : "71211",
+		"id" : "544",
+		"it" : true,
+		"name" : "COMMS-VOIPPRIVATELINKS"
+	}, {
+		"code" : "71212",
+		"id" : "545",
+		"it" : true,
+		"name" : "COMMS-VOIPUSAGE"
+	}, {
+		"code" : "71213",
+		"id" : "546",
+		"it" : true,
+		"name" : "COMMS-VOIPWIRELESS"
+	}, {
+		"code" : "70302",
+		"id" : "534",
+		"it" : true,
+		"name" : "CONSULTANTS-PROJECTS"
+	}, {
+		"code" : "70303",
+		"id" : "535",
+		"it" : true,
+		"name" : "CONSULTANTS-STAFAUG"
+	}, {
+		"code" : "15070",
+		"id" : "69",
+		"it" : true,
+		"name" : "Hardware"
+	}, {
+		"code" : "71300",
+		"id" : "547",
+		"it" : true,
+		"name" : "HARDWARE MAINTENANCE"
+	}, {
+		"code" : "71101",
+		"id" : "461",
+		"it" : true,
+		"name" : "PIZZA - BONK"
+	}, {
+		"code" : "71104",
+		"id" : "536",
+		"it" : true,
+		"name" : "PIZZA -ONTIME"
+	}, {
+		"code" : "71105",
+		"id" : "537",
+		"it" : true,
+		"name" : "PIZZA -USER"
+	}, {
+		"code" : "7150",
+		"id" : "551",
+		"it" : true,
+		"name" : "INSOURCE-COM"
+	}, {
+		"code" : "71500",
+		"id" : "549",
+		"it" : true,
+		"name" : "Peripherals"
+	}, {
+		"code" : "78104",
+		"id" : "552",
+		"it" : true,
+		"name" : "SUBLICATIONS & SUBS"
+	}, {
+		"code" : "71504",
+		"id" : "483",
+		"it" : true,
+		"name" : "SAAS"
+	}, {
+		"code" : "71505",
+		"id" : "550",
+		"it" : true,
+		"name" : "SOFTWARE LICENSES"
+	}, {
+		"code" : "71303",
+		"id" : "548",
+		"it" : true,
+		"name" : "SOFTWARE MAINTENANCE"
+	}, {
+		"code" : "73500",
+		"id" : "381",
+		"it" : false,
+		"name" : "LEASE PMT. EXPENSE"
+	}, {
+		"code" : "15100",
+		"id" : "71",
+		"it" : false,
+		"name" : "LEASEHOLD IMPROVEMENTS - FA"
+	}, {
+		"code" : "70000",
+		"id" : "338",
+		"it" : false,
+		"name" : "LEGAL FEES"
+	}, {
+		"code" : "78904",
+		"id" : "414",
+		"it" : false,
+		"name" : "LOSS ON SALE FA -F&F"
+	}, {
+		"code" : "78902",
+		"id" : "412",
+		"it" : false,
+		"name" : "LOSS ON SALE FA -HDW"
+	}, {
+		"code" : "71102",
+		"id" : "462",
+		"it" : false,
+		"name" : "PIZZA - COMMS"
+	}, {
+		"code" : "71103",
+		"id" : "463",
+		"it" : false,
+		"name" : "PIZZA - OTHER"
+	}, {
+		"code" : "71100",
+		"id" : "349",
+		"it" : false,
+		"name" : "PIZZA - USER"
+	}, {
+		"code" : "71106",
+		"id" : "538",
+		"it" : false,
+		"name" : "PIZZA -COMMS-DATAINTERNAL"
+	}, {
+		"code" : "72801",
+		"id" : "366",
+		"it" : false,
+		"name" : "MARKETING EXPENSE"
+	}, {
+		"code" : "72000",
+		"id" : "357",
+		"it" : false,
+		"name" : "MEALS - FIRM"
+	}, {
+		"code" : "78326",
+		"id" : "404",
+		"it" : false,
+		"name" : "MEMBERSHIP FEES\/DUES"
+	}, {
+		"code" : "19000",
+		"id" : "110",
+		"it" : false,
+		"name" : "MISC RECEIVABLE"
+	}, {
+		"code" : "78903",
+		"id" : "413",
+		"it" : false,
+		"name" : "MISC. EXPENSES - GLOSS"
+	}, {
+		"code" : "78901",
+		"id" : "411",
+		"it" : false,
+		"name" : "MISCELLANEOUS EXPENSE"
+	}, {
+		"code" : "78302",
+		"id" : "393",
+		"it" : false,
+		"name" : "MIZUHO INTL SVC. FEE EXP."
+	}, {
+		"code" : "20702",
+		"id" : "139",
+		"it" : false,
+		"name" : "NFA FEES PAY - CUST."
+	}, {
+		"code" : "72501",
+		"id" : "364",
+		"it" : false,
+		"name" : "NON DEDUCTIBLE T & E"
+	}, {
+		"code" : "73140",
+		"id" : "372",
+		"it" : false,
+		"name" : "OCCUPANCY TAX"
+	}, {
+		"code" : "71503",
+		"id" : "356",
+		"it" : false,
+		"name" : "INSOURCE COM"
+	}, {
+		"code" : "78102",
+		"id" : "387",
+		"it" : false,
+		"name" : "PAYROLL RELATED PROCESSING FEE"
+	}, {
+		"code" : "71501",
+		"id" : "354",
+		"it" : false,
+		"name" : "PERIPHERALS-SUPPLIES"
+	}, {
+		"code" : "78103",
+		"id" : "388",
+		"it" : false,
+		"name" : "POSTAGE & EXPRESS MAIL"
+	}, {
+		"code" : "60800",
+		"id" : "318",
+		"it" : false,
+		"name" : "PR TAXES - FICA"
+	}, {
+		"code" : "60804",
+		"id" : "322",
+		"it" : false,
+		"name" : "PR TAXES - OTHER"
+	}, {
+		"code" : "60802",
+		"id" : "320",
+		"it" : false,
+		"name" : "PR TAXES - SUI"
+	}, {
+		"code" : "19111",
+		"id" : "457",
+		"it" : false,
+		"name" : "PREPAID BENEFITS"
+	}, {
+		"code" : "19100",
+		"id" : "117",
+		"it" : false,
+		"name" : "PREPAID EXPENSES"
+	}, {
+		"code" : "19110",
+		"id" : "455",
+		"it" : false,
+		"name" : "PREPAID INFOMATCH"
+	}, {
+		"code" : "19101",
+		"id" : "118",
+		"it" : false,
+		"name" : "PREPAID TAXES"
+	}, {
+		"code" : "78112",
+		"id" : "390",
+		"it" : false,
+		"name" : "PRINT RESEARCH\/INSIDE"
+	}, {
+		"code" : "78101",
+		"id" : "386",
+		"it" : false,
+		"name" : "SUBLICATIONS & SUBS"
+	}, {
+		"code" : "78113",
+		"id" : "391",
+		"it" : false,
+		"name" : "SUBLISHING COSTS"
+	}, {
+		"code" : "16490",
+		"id" : "87",
+		"it" : false,
+		"name" : "REC FROM CORP. CLIENT"
+	}, {
+		"code" : "16560",
+		"id" : "91",
+		"it" : false,
+		"name" : "REC FROM MIZUHO INTL"
+	}, {
+		"code" : "19001",
+		"id" : "111",
+		"it" : false,
+		"name" : "RECEIVABLE - EXPENSE SYSTEM"
+	}, {
+		"code" : "19060",
+		"id" : "114",
+		"it" : false,
+		"name" : "RECEIVABLE - MHI"
+	}, {
+		"code" : "19002",
+		"id" : "112",
+		"it" : false,
+		"name" : "RECEIVABLE - TRANSIT CHECKS"
+	}, {
+		"code" : "19004",
+		"id" : "494",
+		"it" : false,
+		"name" : "RECEIVABLE - UNUM LIFE INSURANCE"
+	}, {
+		"code" : "19070",
+		"id" : "115",
+		"it" : false,
+		"name" : "RECEIVABLE-MHCB\/MHSC"
+	}, {
+		"code" : "78700",
+		"id" : "408",
+		"it" : false,
+		"name" : "RECORDS MANAGEMENT"
+	}, {
+		"code" : "78350",
+		"id" : "407",
+		"it" : false,
+		"name" : "REGISTRATION FEES"
+	}, {
+		"code" : "78327",
+		"id" : "405",
+		"it" : false,
+		"name" : "REGULATORY FEES\/ASSE"
+	}, {
+		"code" : "70410",
+		"id" : "344",
+		"it" : false,
+		"name" : "RELOCATION FEES"
+	}, {
+		"code" : "73100",
+		"id" : "369",
+		"it" : false,
+		"name" : "RENT - LEASEHOLD"
+	}, {
+		"code" : "73101",
+		"id" : "370",
+		"it" : false,
+		"name" : "RENT - OPER. ESCAL."
+	}, {
+		"code" : "73160",
+		"id" : "373",
+		"it" : false,
+		"name" : "RENT - PARKING"
+	}, {
+		"code" : "73102",
+		"id" : "371",
+		"it" : false,
+		"name" : "RENT - SUPP. CHILLED"
+	}, {
+		"code" : "60100",
+		"id" : "307",
+		"it" : false,
+		"name" : "SALARIES"
+	}, {
+		"code" : "68502",
+		"id" : "335",
+		"it" : false,
+		"name" : "SALES DEPT ALLOCATION"
+	}, {
+		"code" : "20110",
+		"id" : "133",
+		"it" : false,
+		"name" : "SALES TAX PAYABLE"
+	}, {
+		"code" : "50845",
+		"id" : "284",
+		"it" : false,
+		"name" : "SEC FEES EXPENSE"
+	}, {
+		"code" : "78303",
+		"id" : "394",
+		"it" : false,
+		"name" : "SECONDMENT FEE INC."
+	}, {
+		"code" : "19220",
+		"id" : "120",
+		"it" : false,
+		"name" : "SECURITY DEPOSITS"
+	}, {
+		"code" : "70902",
+		"id" : "348",
+		"it" : false,
+		"name" : "SEMINARS\/CONFERENCES"
+	}, {
+		"code" : "78328",
+		"id" : "406",
+		"it" : false,
+		"name" : "SIPC ASSESSMENT"
+	}, {
+		"code" : "15080",
+		"id" : "70",
+		"it" : false,
+		"name" : "SOFTWARE - FA"
+	}, {
+		"code" : "71502",
+		"id" : "355",
+		"it" : false,
+		"name" : "SOFTWARE LICENCE"
+	}, {
+		"code" : "71302",
+		"id" : "353",
+		"it" : false,
+		"name" : "SOFTWARE MAINTENANCE"
+	}, {
+		"code" : "82001",
+		"id" : "424",
+		"it" : false,
+		"name" : "STATE INC TAX - CURR"
+	}, {
+		"code" : "82002",
+		"id" : "425",
+		"it" : false,
+		"name" : "STATE INC TAX - DEF."
+	}, {
+		"code" : "78111",
+		"id" : "389",
+		"it" : false,
+		"name" : "STATIONARY & SUPPLIES"
+	}, {
+		"code" : "20714",
+		"id" : "517",
+		"it" : false,
+		"name" : "SWAP BROKER PAYABLE"
+	}, {
+		"code" : "80061",
+		"id" : "421",
+		"it" : false,
+		"name" : "TAXES - OTHER"
+	}, {
+		"code" : "70500",
+		"id" : "345",
+		"it" : false,
+		"name" : "WorkORARY HELP"
+	}, {
+		"code" : "50860",
+		"id" : "285",
+		"it" : false,
+		"name" : "TICKET FEES EXPENSE"
+	}, {
+		"code" : "78323",
+		"id" : "401",
+		"it" : false,
+		"name" : "TRADING JACKETS"
+	}, {
+		"code" : "70901",
+		"id" : "347",
+		"it" : false,
+		"name" : "TRAINING"
+	}, {
+		"code" : "72405",
+		"id" : "363",
+		"it" : false,
+		"name" : "TRAVEL - LOCAL"
+	}, {
+		"code" : "72401",
+		"id" : "359",
+		"it" : false,
+		"name" : "TRAVEL & ENT - AIR FARE"
+	}, {
+		"code" : "72100",
+		"id" : "358",
+		"it" : false,
+		"name" : "TRAVEL & ENT - ENTERTAINMENT"
+	}, {
+		"code" : "72404",
+		"id" : "362",
+		"it" : false,
+		"name" : "TRAVEL & ENT - GIFTS"
+	}, {
+		"code" : "72402",
+		"id" : "360",
+		"it" : false,
+		"name" : "TRAVEL & ENT - LODGING"
+	}, {
+		"code" : "72403",
+		"id" : "361",
+		"it" : false,
+		"name" : "TRAVEL & ENT - MEALS"
+	}, {
+		"code" : "73200",
+		"id" : "374",
+		"it" : false,
+		"name" : "UTILITIES - ELECTRIC"
+	}, {
+		"code" : "73220",
+		"id" : "376",
+		"it" : false,
+		"name" : "UTILITIES - HVAC"
+	}, {
+		"code" : "73210",
+		"id" : "375",
+		"it" : false,
+		"name" : "UTILITIES - MISC"
+	}
+]

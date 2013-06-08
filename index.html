@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <link href="./library/select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="./library/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="./library/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="./library/jquery/redmond/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css" />
+        <link href="./library/jqgrid/css/ui.jqgrid.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="./library/jqgrid/css/ui.jqgrid.msusa.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+        <title>Budget vs Actual Dashboard</title>
+    </head>
+    <body>
+        <div id="budgetMain" class="container-fluid">
+            <div class="row-fluid">
+                <button id="subBackBtn" data-bind="click: function(){ $C.GoBack(); }"
+                class="btn btn-small pull-left hide">
+                    <i class="icon-arrow-left"></i>Back</button>
+            </div>
+            <div>
+                <h1>IT Budget Dashboard</h1>
+            </div>
+            <div style="">
+                    <hr class="line" />
+                    <div class="row-fluid hide" id="groupControls">
+                        <span class="span4">
+                            <small>
+                                <b></b>
+                            </small>
+                            <div class="btn-group">
+                                <button class="btn btn-mini" data-dimension="ITDepartment" data-bind="checked:false, event:{ click: DimensionClick}">IT Dept</button>
+                                <button class="btn btn-mini" data-dimension="el1Name" data-bind="checked:false, event:{ click: DimensionClick }">Division</button>
+                                <button class="btn btn-mini" data-dimension="el2" id="groupExCat" data-bind="checked:false, event:{ click: DimensionClick}">Exp Category</button>
+                                <button class="btn btn-mini" data-dimension="projectName" data-bind="checked:false, event:{ click: DimensionClick}">Project</button>
+                                <button class="btn btn-mini" data-dimension="Budgeted" data-bind="checked:false, event:{ click: DimensionClick}">Budgeted</button>
+                                <button class="btn btn-mini" data-dimension="Recurring" data-bind="checked:false, event:{ click: DimensionClick}">Recurring</button>
+                            </div>
+                        </span>
+                        <span class="span4 pull-right">
+                            <button class="btn btn-mini" data-bind="checked:false, event:{ click:ToExcel }">
+                                <img src="./images/icxls.png" alt="Excel" title="Snapshot to Excel" />
+                                Excel Snapshot</button>
+                        </span>
+                    </div>
+                    <div class="row-fluid hide" id="filterControls">
+                         <select placeholder="IT Department" multiple="true"  
+                            class="select2" data-bind="foreach:$V.Actual.Summary.ITDept">
+                            <option data-bind="text:$data"></option>
+                         </select>
+                    </div>
+                    <hr class="line" />
+                <div class="row-fluid">
+                    <div class="span9">
+                        <div class="row-fluid hide">
+                            <div class="btn-group">
+                                <button data-bind="click:function(){ drawAreaChart($V.chartOptions); }"
+                                class="btn">Chart</button>
+                                <button data-bind="click:function(){ drawGrid(); }" class="btn">Grid</button>
+                            </div>
+                        </div>
+                        <div class="row-fluid" style="padding-bottom:10px">
+                            <div class="btn-group pull-right hide" style="position:relative; z-index:10; top:40px; left:-150px"
+                            id="chartBtns">
+                                <button class="btn btn-mini" rel="tooltip" data-placement="top" data-bind="click:function(){$C.zoomOut();}"
+                                title="Zoom Out">
+                                    <i class="icon-minus"></i>
+                                </button>
+                                <button class="btn btn-mini" rel="tooltip" data-placement="top" data-bind="click:function(){$C.zoomIn();}"
+                                title="Zoom In">
+                                    <i class="icon-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="container" class="row-fluid">
+                            <h4 style="padding-left:5px">
+                                <small>
+                                    <i class="icon icon-time"></i>
+                                    Your dashboard is loading...</small>
+                            </h4>
+                        </div>
+                        <div id="subChart" class="span12 hide"></div>
+                    </div>
+                    <div class="span3">
+                        <div id="budgetSearch" class="container-fluid">
+                            <div class="row-fluid" id="po2wrapper">
+                                <input type="hidden" id="search2" class="s2 span9" />
+                                <button onclick="OpenS2Val(); return false;" class="btn btn-mini span2 pull-right">Go</button>
+                                <a href="#" target="_blank" id="theLink"></a>
+                            </div>
+                            <div class="row-fluid">
+                                <div id="pie"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid" id="gridWrapper">
+                    <table id="grid"></table>
+                    <div id="gpager"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./library/jquery/jquery-1.7.1.min.js"></script>
+        <script src="./library/bootstrap/js/bootstrap.js"></script>
+        <script src="./library/jquery/jquery-ui-1.8.4.custom.min.js"></script>
+        <script src="./library/jqgrid/js/jquery.jqGrid.min.js"></script>
+        <script src="./library/knockout/knockout-2.2.1.js"></script>
+        <script src="./library/highcharts/js/highcharts.js"></script>
+        <script src="./library/highcharts/js/modules/exporting.js"></script>
+        <script src="./library/select2/select2.js"></script>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/index.grid.js"></script>
+    </body>
+
+</html>
