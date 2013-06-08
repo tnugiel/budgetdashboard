@@ -205,16 +205,23 @@ var $C = {
 		});
 		return sStr;
 	},
+    groupView: {
+    			groupField : ['el2'],
+				groupOrder : ['asc','asc','asc','asc'], 
+				groupSummary : [true],
+				showSummaryOnHide : true,
+				groupCollapse : true		
+			},
 	gridGroupClick : function (model, e, sFieldName) {
 		var oTarget = $(e.target);
-		var oGroupView = grid.getGridParam('groupingView');
+		$C.groupView = grid.getGridParam('groupingView');
 		if (!oTarget.hasClass('btn-info')) {
-			if ($.inArray(sFieldName, oGroupView.groupField) < 0) {
-				oGroupView.groupField.push(sFieldName);
+			if ($.inArray(sFieldName, $C.groupView.groupField) < 0) {
+				$C.groupView.groupField.push(sFieldName);
 			}
 			oTarget.addClass('btn-info');
 		} else {
-			oGroupView.groupField = $.map(oGroupView.groupField, function (i) {
+			$C.groupView.groupField = $.map($C.groupView.groupField, function (i) {
 					if (i != sFieldName) {
 						return i
 					}
@@ -222,21 +229,17 @@ var $C = {
 				oTarget.removeClass('btn-info');
 		}
 		/*turn on summary for all group levels*/
-		oGroupView.groupSummary = $.map(oGroupView.groupField, function () {
+		$C.groupView.groupSummary = $.map($C.groupView.groupField, function () {
 				return true;
 			});
 		grid.setGridParam({
-			grouping : oGroupView.groupField.length > 0
+			grouping : $C.groupView.groupField.length > 0
 		});
 		grid.setGridParam({
-			groupingView : oGroupView
+			groupingView : $C.groupView
 		});
 		grid.trigger('reloadGrid');
 		//console.log(oGroupView);
-        
-        
-
-            
         
 	},
 	CarryOver: function(p_sExpCatCode) {
@@ -264,7 +267,12 @@ var $C = {
         subChart.destroy(); 
         $('#subBackBtn, #subChart').addClass('hide'); 
         $('#container, #chartBtns').removeClass('hide'); 	
-	}
+	},
+    FilterData : {
+        ITDepartment: [],
+        el2: [],
+        Recurring: false
+    }
 }
 
 console.log('Loading InvoiceExpenseList: ' + $C.InvoiceExpenseListUrl());
@@ -420,25 +428,23 @@ $.getJSON($C.InvoiceExpenseListUrl(), {get : 'InvoiceExpenseList', _nocache : $C
 				drawPie();
 				drawGrid();
                 
+                /*highlight the exp cat group by button */
+                $('#groupExCat').addClass('btn-info');
+                
 				ko.applyBindings($V, document.getElementById("budgetMain"));
                 
                 $('.select2').select2({}).on('change', function(){
                     
-                    console.log($(this).val());                    
+                    //console.log($(this).val());                    
+                     
+                    //console.log($(this).data().dimension)
                     
-                        var oDataOption = {
-                            recurring:false,
-                            itdept: $(this).val()
-                        };
+                        
+                    $C.FilterData[$(this).data().dimension] = $(this).val();
         
-                    //is recurring active?
-                    if ( $.inArray('Recurring', grid.getGridParam('groupingView').groupField) >= 0) {                        
-                        oDataOption.recurring = true;
-                    }
-                    
-                    
-                    $V.Budget.Summary.Amount = GetBudgetAmount(oDataOption);
-                    $V.Actual.Summary.Spend = GetActualSpend(oDataOption);
+
+                    $V.Budget.Summary.Amount = GetBudgetAmount($C.FilterData);
+                    $V.Actual.Summary.Spend = GetActualSpend($C.FilterData);
                     
                     //rebuild chart options based off of selection
                     $V.chartOptions = GetChartOptions();
@@ -715,14 +721,12 @@ function openInvoice(id) {
 	return false;
 }
 
-
 /* this is to catch the use of the native browser back button when drilldown is active */
 $(window).on('hashchange', function(e) {
 	if ( window.location.hash === '' ) {
 		$C.GoBack();
 	}
 });
-
 
 function GetActualSpend(options) {
     var options = options || [];
@@ -732,27 +736,32 @@ function GetActualSpend(options) {
     $V.Actual.FilteredData = [];
 	return  $.map($V.Actual.Summary.ExpSubCat, function (c) {
         
-    		var colMatch = $.grep($V.Actual.AllocationData, function (i) {               
+                var colMatch = $.grep($V.Actual.AllocationData, function (i) {               
                 
                 //filter Recurring if selected
-                if ( options.recurring ) {                     
+                if ( options.Recurring ) {                     
                     if(i.projectName != 'Recurring') {
                         return false;
                     }                    
                 } 
                 
                 //filter ITDepartment if selected
-                if ( options.itdept) {
-                    if ( $.inArray(i.ITDepartment, options.itdept) < 0 ) {
+                if ( options.ITDepartment && options.ITDepartment.length > 0) {
+                    if ( $.inArray(i.ITDepartment, options.ITDepartment) < 0 ) {
                         return false;
                     }
                 }         
                     
+                if ( options.el2 && options.el2.length > 0) {
+                    if ( $.inArray(i.el2, options.el2) < 0 ) {
+                        return 0;
+                    }
+                }
+
                 return i.el2 == c;                
                     
 			}).sort(function (x, y) {return x.InvoiceId < y.InvoiceId ? -1 : 1});
 			
-            
             
             //compute total per invoice
             var dTotal = 0;
@@ -809,20 +818,26 @@ function GetBudgetAmount(options) {
 					if (this.BudgetGL == c) {
                         
                         //filter Recurring if selected
-                        if ( options.recurring ) {
+                        if ( options.Recurring ) {
                             if ( this['Project_x0020_Name_x0020__x002f_'] != 'Recurring' ) {
                                 return 0;
                             }
                         } 
                         
                         //filter ITDepartment if selected
-                        if ( options.itdept) {
-                            if ( $.inArray(this['IT_x0020_Department'], options.itdept) < 0 ) {
+                        if ( options.ITDepartment && options.ITDepartment.length > 0) {
+                            if ( $.inArray(this['IT_x0020_Department'], options.ITDepartment) < 0 ) {
                                 return 0;
                             }
                         }
                         
-					    dTotal += isNaN(this.Total) ? 0 : Number(this.Total);
+                        if ( options.el2 && options.el2 > 0) {
+                            if ( $.inArray(this['BudgetGL'], options.el2) < 0 ) {
+                                return 0;
+                            }
+                        }
+                        
+                        dTotal += isNaN(this.Total) ? 0 : Number(this.Total);
 					}
 				});
                 
@@ -837,7 +852,6 @@ function GetBudgetAmount(options) {
 				}
 			});
 }
-
 
 function GetChartOptions(options) {
     

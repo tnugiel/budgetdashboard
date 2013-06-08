@@ -169,13 +169,7 @@ function drawGrid() {
 			//toppager : true,			
 			rowNum : colGridData.length,
 			grouping : true,
-			groupingView : {
-				groupField : ['el2'],
-				groupOrder : ['asc','asc','asc','asc'], 
-				groupSummary : [true],
-				showSummaryOnHide : true,
-				groupCollapse : true		
-			},
+			groupingView : $C.groupView,
 			ondblClickRow : function (rowid, iRow, iCol, e) {
 				openInvoice(grid.getRowData(rowid).InvoiceId);
 			},
@@ -191,7 +185,7 @@ function drawGrid() {
 	grid.filterToolbar({
 		autosearch : true
 	});
-	
-	/*highlight the exp cat group by button */
-	$('#groupExCat').addClass('btn-info');
+    
+    
+    
 }

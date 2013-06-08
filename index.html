@@ -8,7 +8,7 @@
         <link href="./library/jquery/redmond/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css" />
         <link href="./library/jqgrid/css/ui.jqgrid.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="./library/jqgrid/css/ui.jqgrid.msusa.css" rel="stylesheet" type="text/css" media="screen" />
-
+ 
 
         <title>Budget vs Actual Dashboard</title>
     </head>
@@ -23,34 +23,22 @@
                 <h1>IT Budget Dashboard</h1>
             </div>
             <div style="">
-                    <hr class="line" />
-                    <div class="row-fluid hide" id="groupControls">
-                        <span class="span4">
-                            <small>
-                                <b></b>
-                            </small>
-                            <div class="btn-group">
-                                <button class="btn btn-mini" data-dimension="ITDepartment" data-bind="checked:false, event:{ click: DimensionClick}">IT Dept</button>
-                                <button class="btn btn-mini" data-dimension="el1Name" data-bind="checked:false, event:{ click: DimensionClick }">Division</button>
-                                <button class="btn btn-mini" data-dimension="el2" id="groupExCat" data-bind="checked:false, event:{ click: DimensionClick}">Exp Category</button>
-                                <button class="btn btn-mini" data-dimension="projectName" data-bind="checked:false, event:{ click: DimensionClick}">Project</button>
-                                <button class="btn btn-mini" data-dimension="Budgeted" data-bind="checked:false, event:{ click: DimensionClick}">Budgeted</button>
-                                <button class="btn btn-mini" data-dimension="Recurring" data-bind="checked:false, event:{ click: DimensionClick}">Recurring</button>
-                            </div>
-                        </span>
-                        <span class="span4 pull-right">
-                            <button class="btn btn-mini" data-bind="checked:false, event:{ click:ToExcel }">
-                                <img src="./images/icxls.png" alt="Excel" title="Snapshot to Excel" />
-                                Excel Snapshot</button>
-                        </span>
+                    <div class="row-fluid">
+                        <div class="row-fluid well hide" id="filterControls">
+                             <div class="span3">
+                                 <select data-dimension="ITDepartment" placeholder="IT Department" multiple="true"  
+                                    class="select2 input" data-bind="foreach:$V.Actual.Summary.ITDept">
+                                    <option data-bind="text:$data"></option>
+                                 </select>
+                             </div>
+                             <div class="span3">
+                                 <select data-dimension="el2"  placeholder="Exp Category" multiple="true"  
+                                    class="select2" data-bind="foreach:$V.Actual.Summary.ExpSubCatObj">
+                                    <option data-bind="value:$data.code, text:$data.name"></option>
+                                 </select>
+                             </div>                         
+                        </div>
                     </div>
-                    <div class="row-fluid hide" id="filterControls">
-                         <select placeholder="IT Department" multiple="true"  
-                            class="select2" data-bind="foreach:$V.Actual.Summary.ITDept">
-                            <option data-bind="text:$data"></option>
-                         </select>
-                    </div>
-                    <hr class="line" />
                 <div class="row-fluid">
                     <div class="span9">
                         <div class="row-fluid hide">
@@ -95,7 +83,28 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row-fluid" id="gridWrapper">
+                <div class="row-fluid well hide" id="groupControls">
+                    <span class="span4">
+                        <small>
+                            <b></b>
+                        </small>
+                        <div class="btn-group">
+                            <button class="btn btn-mini" data-dimension="ITDepartment" data-bind="checked:false, event:{ click: DimensionClick}">IT Dept</button>
+                            <button class="btn btn-mini" data-dimension="el1Name" data-bind="checked:false, event:{ click: DimensionClick }">Division</button>
+                            <button class="btn btn-mini" data-dimension="el2" id="groupExCat" data-bind="checked:false, event:{ click: DimensionClick}">Exp Category</button>
+                            <button class="btn btn-mini" data-dimension="projectName" data-bind="checked:false, event:{ click: DimensionClick}">Project</button>
+                            <button class="btn btn-mini" data-dimension="Budgeted" data-bind="checked:false, event:{ click: DimensionClick}">Budgeted</button>
+                            <button class="btn btn-mini" data-dimension="Recurring" data-bind="checked:false, event:{ click: DimensionClick}">Recurring</button>
+                        </div>
+                    </span>
+                    <span class="span4 pull-right">
+                        <button class="btn btn-mini" data-bind="checked:false, event:{ click:ToExcel }">
+                            <img src="./images/icxls.png" alt="Excel" title="Snapshot to Excel" />
+                            Excel Snapshot</button>
+                    </span>
+                </div>                
                     <table id="grid"></table>
                     <div id="gpager"></div>
                 </div>
